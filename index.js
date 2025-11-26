@@ -47,6 +47,7 @@ search.addEventListener('click', () => {
                     break;
                 case 'Mist':
                     image.src='images/mist.jpeg';
+                    break;
                 case 'Haze':
                     image.src = 'images/mist.jpeg';
                     break;
@@ -57,7 +58,7 @@ search.addEventListener('click', () => {
 
            temp.innerHTML=`${parseInt(json.main.temp)}<span>°C</span>`;
            temp.classList.add("temp");
-           let des = documet.querySelector(".description");
+           let des = document.querySelector(".description");
            des.innerText = condition;
 
 
@@ -67,6 +68,7 @@ search.addEventListener('click', () => {
  } );
         
 })
+
 
 
 
